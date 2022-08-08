@@ -29,4 +29,5 @@ q  - чтобы вернуться обратно в меню git. Q - от ан
 
 Эта же [инструкция](https://github.com/TitovDmitriy/GeekBrains/blob/master/git_instructions.md) на GitHub.
 
+<<<<<<< HEAD
 ![avatar](https://cs14.pikabu.ru/post_img/big/2022/06/07/10/1654623234127688840.png)
