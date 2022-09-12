@@ -5,10 +5,10 @@
 23432 -> да*/
 
 Console.WriteLine("Введите пятизначное число: ");
-string number = Console.ReadLine();
+string ? number = Console.ReadLine();
 
 //создаём массив, в который посимвольно передаём элементы строки
-char[] obrnumber = number.ToCharArray();
+char[]  obrnumber = number.ToCharArray();
 
 //переворачиваем массив
 Array.Reverse(obrnumber);

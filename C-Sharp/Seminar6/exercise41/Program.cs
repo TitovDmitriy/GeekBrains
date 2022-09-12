@@ -4,7 +4,7 @@
 1, -7, 567, 89, 223-> 3*/
 
 Console.Write("Введите колличество чисел: ");
-int M = int.Parse(Console.ReadLine());
+int  M = int.Parse(Console.ReadLine());
 
 void PositiveNumbers(int num)
 {
