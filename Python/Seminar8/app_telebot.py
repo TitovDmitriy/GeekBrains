@@ -8,7 +8,7 @@ data = []
 data = f.read().split('.')
 f.close()
 
-bot = telebot.TeleBot('5973244275:AAGH80pSlj5s4Nz5aiPnPtYqDuLinxgWGwg')
+bot = telebot.TeleBot('Token')
 
 @bot.message_handler(commands=['start', 'help'])
 def start(m, res=False):
