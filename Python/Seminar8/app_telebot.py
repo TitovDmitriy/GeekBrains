@@ -1,8 +1,6 @@
 import telebot
 from telebot import types
 
-bot = telebot.TeleBot('секретный токен')
-
 f = open('C:\GitHub_projects\GB\Python\Seminar8\Database.txt', 'r', encoding='UTF-8')
 data = []
 data = f.read().split('.')
