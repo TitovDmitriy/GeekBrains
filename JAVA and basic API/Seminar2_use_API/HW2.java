@@ -49,7 +49,6 @@ public class HW2 {
         
         // 7. **Сравнить время выполнения пунка 6 со строкой содержащей 10000 символов "=" средствами String и StringBuilder.
         double begin = System.currentTimeMillis();
-        // String strSum = "=";
         char ch = '=';
         for (int i = 0; i < 10000; i++) {
             strSum += ch;
