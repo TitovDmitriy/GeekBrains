@@ -32,13 +32,13 @@ public class HW3 {
         System.out.println(lst2);
         
         ArrayList<Integer> templst1 = new ArrayList<>(lst1);
-
-
         templst1.removeAll(lst2);   
         System.out.println(templst1);    
-        lst1.removeAll(templst1); // Удаляем из первого списка элементы, которые отсутствуют во втором списке.        
+        lst1.removeAll(templst1); // Удаляем из первого списка элементы, которые отсутствуют во втором списке.
+
         Collections.sort(lst1); // Сортируем список по возростанию
         System.out.println(lst1);
+        
         Collections.reverse(lst1); // Сортируем по уменьшению
         System.out.println(lst1);       
     }
