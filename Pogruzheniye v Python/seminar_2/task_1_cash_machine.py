@@ -26,7 +26,7 @@ def menu():
             remove_money(TEMP_CASH, COUNT, TOTAL_SCORE)
         elif choice == "4":
             print("До свидания!")
-            end_session()
+            end_operations()
         else:
             print("Попробуйте снова!")
 
@@ -78,7 +78,7 @@ if COUNT % MAX_COUNT == 0:
 def balance(cash):
     return TOTAL_SCORE
 
-def end_session():
+def end_operations():
     exit()
 
 
