@@ -35,7 +35,7 @@ def add_money(add_cash, COUNT, TOTAL_SCORE) -> int:
     print("Укажите сумму для пополнение счёта!")
     add_cash = int(input())
     if add_cash % MULT == 0:
-        TOTAL_SCORE += add_cash        
+        TOTAL_SCORE += add_cash
         print("Внесение денежных средств прошло успешно")
         COUNT+= 1
     else:
@@ -48,16 +48,12 @@ def remove_money(remove_cash, COUNT, TOTAL_SCORE=int) ->int:
     print("Укажите сумму для снятия!")
     remove_cash = int(input())
     if remove_cash % MULT == 0 and remove_cash > TOTAL_SCORE:
-            print("на вашем счёте недостаточно средств!")        
-            TOTAL_SCORE -= remove_cash 
-            
+        print("на вашем счёте недостаточно средств!")
+        TOTAL_SCORE -= remove_cash
     elif remove_cash > MAX_SCORE:
         TOTAL_SCORE -= (remove_cash + (remove_cash * RICH_PERCENT))            
         print("был вычтен налог на богатство 10%")
         COUNT += 1
-        if COUNT % MAX_COUNT == 0:
-            TOTAL_SCORE += (remove_cash * EXTRA_PERCENT)
-            
     elif remove_cash * PERCENT > MIN_CASH and remove_cash * PERCENT < MAX_CASH:
             TOTAL_SCORE -= remove_cash + (remove_cash * PERCENT)                
             print("комиссия за снятие наличных 1.5%")
@@ -74,7 +70,7 @@ def remove_money(remove_cash, COUNT, TOTAL_SCORE=int) ->int:
         print("Сумма снятия наличных должна быть кратна 50")
     return TOTAL_SCORE
     
-if COUNT > MAX_COUNT:
+if COUNT % MAX_COUNT == 0:
     TOTAL_SCORE *= EXTRA_PERCENT
     COUNT = 0
 
