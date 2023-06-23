@@ -11,7 +11,7 @@ TOTAL_SCORE = 0
 TEMP_CASH = 0
 
 def menu():
-    print("Выберите операцию")
+    print("Выберите операцию: ")
     while True:
         print("1. Проверить баланс!")
         print("2. Пополнить счёт!")
@@ -32,14 +32,14 @@ def menu():
 
 # Функция пополнения счёта
 def add_money(add_cash, COUNT, TOTAL_SCORE) -> int:
-    print("укажите сумму для пополнение счёта!")
+    print("Укажите сумму для пополнение счёта!")
     add_cash = int(input())
     if add_cash % MULT == 0:
         TOTAL_SCORE += add_cash        
         print("Внесение денежных средств прошло успешно")
         COUNT+= 1
     else:
-        print("Сумма внесения наличных должна быть кратна 50")
+        print("Сумма пополнения наличных должна быть кратна 50")
     return TOTAL_SCORE
     
 
@@ -78,7 +78,7 @@ if COUNT > MAX_COUNT:
     TOTAL_SCORE *= EXTRA_PERCENT
     COUNT = 0
 
-# функция запроса баланса владельца карты
+# функция запроса баланса
 def balance(cash):
     return TOTAL_SCORE
 
