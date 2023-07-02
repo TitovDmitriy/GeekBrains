@@ -1,4 +1,4 @@
-# Напишите функцию Python для транспонирования матрицы
+# Напишите функцию для транспонирования матрицы
 
 def transpose_matrix(matrix):
     transposed_matrix = []
