@@ -1,13 +1,12 @@
 # Создайте функцию генератор чисел Фибоначчи
-def fibonacci(n):
-    fib = []
+def fibonacci():
     a, b = 0, 1
-    for i in range(n):
-        fib.append(a)
+    while True:
+        yield b
         a, b = b, a + b
-    return fib
 
 
-fib_numbers = fibonacci(10)
-for num in fib_numbers:
-    print(num)
+f = fibonacci()
+print(next(f))
+print(next(f))
+print(next(f))
