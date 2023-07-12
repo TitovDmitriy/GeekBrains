@@ -53,5 +53,4 @@ def sort_files(source_directory, destination_directory):
     print("Сортировка файлов завершена.")
 
 
-# Пример использования функции
 sort_files("my_directory", "sorted_directory")

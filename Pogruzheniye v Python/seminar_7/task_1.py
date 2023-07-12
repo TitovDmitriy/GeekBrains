@@ -33,5 +33,4 @@ def group_rename_files(dest_name, num_digits, src_ext, dest_ext, name_range=None
         count += 1
 
 
-# Пример использования функции
 group_rename_files("new_file_", 4, ".txt", ".jpg", [3, 6])
