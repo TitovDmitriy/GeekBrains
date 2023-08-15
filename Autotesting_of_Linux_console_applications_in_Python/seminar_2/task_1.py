@@ -36,6 +36,7 @@ def test_step4(make_folders, clear_folders, make_files):
     assert checkout_positive("cd {}; 7z u {}/arx1.7z".format(folder_in, folder_out), "Everything is Ok"), "Test1 Fail"
 
 
+# Д/з:
 def test_step5(make_folders, clear_folders, make_files):
     # test5
     res = []
@@ -45,6 +46,7 @@ def test_step5(make_folders, clear_folders, make_files):
         res.append(check_output("{}: {} = {}".format(folder_out, item, item)))
     assert all(res), "Test Fail"
 
+# Д/з:
 def test_step6(make_folders, clear_folders, make_files):
     # test6
     res = []
