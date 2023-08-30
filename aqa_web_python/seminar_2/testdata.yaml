@@ -1,0 +1,8 @@
+address: https://test-stand.gb.ru
+driver_path: chromedriver.exe
+sleep_time: 5
+login: Kondrat
+passwd: 7901dbec72
+title: seminar_2
+description: homework for seminar_2
+content: introduction to Selenium
